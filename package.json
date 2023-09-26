@@ -1,0 +1,22 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webhook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node webhook.js\" \"node app.js\"",
+    "start-d": "concurrently \"node webhook.js\" \"node app-direct.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.1",
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.1",
+    "ngrok": "^5.0.0-beta.2"
+  }
+}
